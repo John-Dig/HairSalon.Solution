@@ -1,0 +1,29 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.St
+@using HairSalon.Models
+
+<h2>St Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+
+@if (@Model.Cls.Count == 0)
+{
+  <h3>No cls have been added to this st yet!</h3>
+} 
+else
+{
+  <h3>Cls:</h3>
+  <ul>
+    @foreach (Cl cl in Model.Cls)
+    {
+      <li>@Html.ActionLink($"{cl.Description}", "Details", "Cls", new { id = cl.ClId })</li>
+    }
+  </ul>
+}
+
+<p>@Html.ActionLink("Edit St", "Edit", new { id = Model.StId })</p>
+<p>@Html.ActionLink("Delete St", "Delete", new { id = Model.StId })</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>

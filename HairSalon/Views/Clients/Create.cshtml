@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Cl
+
+<h4>Add a new cl</h4>
+
+<p><strong>NOTE:</strong> You need to have at least one st before you can add an cl!</p>
+<p>Go to @Html.ActionLink("this page", "Create", "Sts") to create a st.</p>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Description)
+  @Html.TextBoxFor(model => model.Description)
+
+  @Html.LabelFor(model => model.St)
+  @Html.DropDownList("StId")
+
+  <input type="submit" value="Add new cl" class="btn btn-default" />
+}
+<p>@Html.ActionLink("Show all cls", "Index")</p>

@@ -26,18 +26,18 @@ This site is a fully functioning site to allow a user to input a number of _Styl
   }
 }
 6. Go to the HairSalon directory.
-7. Enter $ -dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0-
-8. Enter $ -dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0-
-9. Enter $ -dotnet watch run-
+7. Enter $ `dotnet add package Microsoft.EntityFrameworkCore -v 6.0.0`
+8. Enter $ `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 6.0.0`
+9. Enter $ `dotnet watch run`
 10. Navigate to localhost:5001 in your browser.
 
 #### Setting up MySQL
 
 1. Open MySQL Workbench (install if not installed here https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql).
 2. Make sure you have a connection open at localhost:3306, click on it.
-3. Click on the -Administration- tab at top left.
-4. Click on -Data Import Restore-.
-5. Click Import From Self-Contained File.
+3. Click on the `Administration` tab at top left.
+4. Click on `Data Import Restore`.
+5. Click `Import From Self-Contained File`.
 6. Enter the location of where you cloned HairSalon.Solution, in that directory select John_Diggins.sql.
 
 ### Known Bugs

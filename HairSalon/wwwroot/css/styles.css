@@ -37,6 +37,12 @@ body {
 
 }
 
+.btn-default {
+  background-color: darkkhaki;
+  border-color:black;
+  margin: 5px;
+}
+
 div#footer {
   position:fixed;
   bottom:0px;
